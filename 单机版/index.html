@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>俄罗斯方块</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div id="">请用方向键和空格键进行操作：上->旋转，左->左移，右->右移，下->下移，空格->坠落</div>
+		<div id="local" class="square">
+			<div class="title">我的游戏区域</div>
+			<div class="game" id="square_game"> </div>
+			<div class="next" id="square_next"> </div>
+			<div class="info">
+				<div id="">已用时：<span id="square_time">0</span>s</div>
+				<div id="">已得分：<span id="square_score">0</span>分</div>
+				<div id="square_gameOver"></div>
+			</div>
+		</div>
+		<div id="remote" class="square">
+			<div class="title">对方的游戏区域</div>
+			<div class="game" id="remote_game"> </div>
+			<div class="next" id="remote_next"> </div>
+			<div class="info">
+				<div id="">已用时：<span id="remote_time">0</span>s</div>
+				<div id="">已得分：<span id="remote_score">0</span>分</div>
+				<div id="remote_gameOver"></div>
+			</div>
+			<div id="">
+				<button type="button" id="down">down</button>
+				<button type="button" id="left">left</button>
+				<button type="button" id="right">right</button>
+				<button type="button" id="rotate">rotate</button>
+				<button type="button" id="fall">fall</button>
+				<button type="button" id="fixed">fixed</button>
+				<button type="button" id="perforNext">perforNext</button>
+				<button type="button" id="checkClear">checkClear</button>
+				<button type="button" id="checkGameOver">checkGameOver</button>
+				<button type="button" id="setTime">setTime</button>
+				<button type="button" id="addScore">addScore</button>
+				<button type="button" id="gameover">gameover</button>
+				<button type="button" id="addTailLines">addTailLines</button>
+			</div>
+		</div>
+		<script src="js/square.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/squareFactory.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/game.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/local.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/remote.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/script.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
